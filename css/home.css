@@ -5,6 +5,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 /*   Estilo da propaganda   */
@@ -111,13 +112,13 @@ main{
 
 .card {
     position: relative;
-    --bg-card: #27272a;
+    background: rgb(33,33,33);
+    background: linear-gradient(86deg, rgba(33,33,33,1) 0%, rgba(56,56,56,1) 64%, rgba(47,47,47,1) 82%);
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     padding: 1rem;
     width: 23rem;
-    background-color: var(--bg-card);
     border-radius: 1rem;
     color: white;
     transition: all 0.3s;
