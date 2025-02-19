@@ -1,117 +1,142 @@
-body {
-    color: white;
-    background-repeat: repeat, no-repeat;
-    background-color: #cccccc;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    font-family: Poppins;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(237, 237, 237);
 }
 
-nav {
-    display: inline-flex;
-    width: 100%;
-    background-color: black;
-}
-.navLogo {
-    max-height: 120px;
-    max-width: 100%;
-    width: auto;
-    height: auto;
+/*   Estilo do rodapé   */
+footer{
+    display: flex;
+    flex-direction: row;
+    gap: auto;
+    background-color: #242323;
+    height: 100%;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    justify-content: space-between;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
-.contact {
-    background-color: #e60000;
+footer .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
     color: white;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 30px;
+}
+
+footer .texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 10px;
     text-align: center;
-    width: 100%;
-    clip-path: polygon(5% 0%, 90% 0%, 100% 100%, 15% 100%);
+    p{
+        white-space: nowrap;
+        
+    }
 }
 
-.content {
-    margin-top: 4%;
-    margin-left: 10%;
-    height: 600px;
-}
-
-h1 {
-    font-weight: bold;
-    font-size: 60px;
+footer .follow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #242323;
     color: white;
-}
-
-h2, li {
-    font-weight: bold;
-    color: white;
-}
-
-.services {
-    font-weight: bold;
-    margin-top: 10px;
-    color: white;
-    padding: 15px;
-    width: 230px;
-    background-color: red;
-    border: none;
-    transition: 300ms;
-}
-
-.services:hover {
-    background-color: #8f0303;
-    opacity: 0.8;
-}
-
-footer {
-    color: white;
-    background-color: rgb(40, 39, 45);
-    display: inline-block;
-    float: right;
-    width: 100%;
-    padding: 30px;
-}
-
-.start {
-    float: left;
-}
-
-.end {
-    margin-top: 25px;
-    float: right;
-}
-
-.media {
-    height: 44px;
-    margin: 8px;
-}
-
-@media (min-width: 768px) {
-    .contact {
-        width: 250px;
-        margin-left: auto;
-        margin-right: 50px;
-        height: fit-content;
+    flex-direction: column;
+    font-size: 10px;
+    margin-bottom: 20px;
+    .redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        color: white;
+        flex-direction: row;
+        gap: 10px;
+    }
+    h2{
+        margin-bottom: 10px;
+        padding: 0;
+        color: white;
+        font-size: 15px;
+    }
+    .redes i{
+        font-size: 25px;
     }
 }
-@media (max-width: 767px){
-    .contact{
-        display: none;
-    }
-    nav{
-        display: block;
-        text-align: center;
-    }
-    .content h1{
-        font-size: 270%;
-        margin-bottom: 25px;
+
+.redes .bxl-instagram{
+    transition: 0.4s;
+    cursor: pointer;
+}
+.redes .bxl-instagram:hover{
+    color: rgb(255, 92, 228);
+}
+.redes .bxl-facebook{
+    transition: 0.4s;
+    cursor: pointer;
+}
+.redes .bxl-facebook:hover{
+    color: rgb(88, 88, 255);
+}
+
+.redes .bxl-whatsapp{
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.redes .bxl-whatsapp:hover{
+    color: rgb(109, 255, 69);
+}
+
+@media screen and (max-width: 1024px) {
+    footer{
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 }
-@media (max-width: 860px){
-    .mediaData{
-        text-align: center;
+
+@media screen and (max-width: 768px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #242323;
+        height: 100%;
+        align-items: center;
+        color: white;
+        font-size: 0.8rem;
     }
-    .end{
-        float: none;
-        display: inline-block;
-        text-align: center;
+
+    footer .texto p{
+        white-space: normal;
     }
 }

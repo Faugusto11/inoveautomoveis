@@ -1,51 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INOVE Auto Center</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/model.css">
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<style>
-    body{
-        color: white;
-    }
-    nav{
-        background-color: black;
-    }
-    .navLogo{
-        height: 120px;
-    }
-</style>
-<body>
-    <nav>
-        <a href="index.html"><img src="img/teste.jpg" class="navLogo"></a>
-        <div class="contact">
-            <h4>Contate-nos:</h4>
-            <strong>(15) 98141-4711</strong>
+    <head>
+        <!--   Metadados   -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta author="">
+        <meta description="">
+        <!--   Título  -->
+        <title>Home | INOVE Auto Center</title>
+        <!--   Ícones   -->
+        <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <!--   Estilos  -->
+        <link rel="stylesheet" href="css/model.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/navbar.css">
+    </head>
+    <body>
+        <!--   Navegação   -->
+        <div class="collapse">
+            <div class="close">
+                <i class="bx bx-x" onclick="toggleCollapse()"></i>
+            </div>
+            <ul class="nav-list-collpase">
+                <li><a href="index.html" class="active"><i class='bx bx-home'></i> Home</a></li>
+                <li><a href="sobre.html"><i class='bx bx-info-circle' ></i> Sobre nós</a></li>
+                <li><a href="servicos.html"><i class='bx bx-wrench'></i> Serviços</a></li>
+                <li><a href="contato.html"><i class='bx bx-user' ></i> Contato</a></li>
+            </ul>
         </div>
-    </nav>
-    <div class="content">
-        <h1>Especialista em Manutenção de Carros</h1>
-        <h2>Veja como prezamos pelos nosso clientes e seus carros</h2>
-        <a href="services.html"><button class="services">NOSSOS SERVIÇOS</button></a>
-    </div>
-    <footer>
-        <div class="start">
-            <h2>INOVE Auto Center</h1>
-            Endereço: R. Antônio de Oliveira, 41 - Vila Augusta, Sorocaba - SP, 18040-120<br>
-            Contato: (15) 98141-4711<br>
-            Copyright @ 2025 | MARYMTEC | All Rights Reserved
-        </div>
-        <div class="mediaData">
-            <div class="end">
-                <a href="https://www.google.com/maps/place/INOVE+CENTRO+AUTOMOTIVO/data=!4m2!3m1!1s0x0:0x9e82101e38488a03?sa=X&ved=1t:2428&ictx=111" target="_blank"><img src="img/maps.png" class="media" alt="Google Maps"></a>
-                <a href="http://wa.link/d8obfn" target="_blank"><img src="img/whatsapp.png" class="media" alt="Whatsapp"></a>
-                <a href="https://www.instagram.com/inoveautocenter_/" target="_blank"><img src="img/instagram.png" class="media" alt="Instagram"></a>
-            </div> 
-        </div>
-    </footer>
-</body>
+        <nav>
+            <i class="bx bx-menu" onclick="toggleCollapse()"></i>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html" class="active"><i class='bx bx-home'></i> Home</a></li>
+                <li><a href="sobre.html"><i class='bx bx-info-circle' ></i> Sobre nós</a></li>
+                <li><a href="servicos.html"><i class='bx bx-wrench'></i> Serviços</a></li>
+                <li><a href="contato.html"><i class='bx bx-user' ></i> Contato</a></li>
+            </ul>
+        </nav>
+
+        <!--   Conteúdo   -->
+        <main>
+
+            <!--section hero-->
+            <section class="propaganda-container">
+                <div class="propaganda">
+                    <h1>INOVE Auto Center</h1>
+                    <h2>Serviços Automotivos</h2>
+                    <p>Escolha o melhor <span>para você</span></p>
+                    <button>Agendar sua visita <i class='bx bxl-whatsapp' ></i></button>
+                </div>
+            </section>
+            <!--fim da section hero-->
+            
+            <div class="faixa">
+                <h2><i class='bx bx-package'></i> ENTREGA RÁPIDA</h2>
+                <h2><i class='bx bxs-check-shield' ></i> QUALIDADE GARANTIDA</h2>
+                <h2><i class='bx bxs-group'></i> CONFIANÇA TOTAL</h2>
+            </div>
+
+            <section class="servico-container">
+                <h1 style="font-size: 2rem; margin: 0;">Nossos Serviços</h1>
+                <div class="cards">
+                    <div class="card">
+                        <div class="content-details">
+                            <p >Saiba mais sobre Manutenção e Diagnóstico</p>
+                        </div>
+                        <div class="image_container">
+                            <img src="img/home/manutencao-img.jpg" alt="" class="image">
+                        </div>
+                        <div class="title">
+                          <span>MANUTENÇÃO & DIAGNÓSTICO</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content-details">
+                            <p >Saiba mais sobre Reparos Gerais</p>
+                        </div>
+                        <div class="image_container">
+                            <img src="img/home/reparos-img.webp" alt="">
+                        </div>
+                        <div class="title">
+                          <span>REPAROS GERAIS</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content-details">
+                            <p >Saiba mais sobre Trocas e Instalações</p>
+                        </div>
+                        <div class="image_container">
+                            <img src="img/home/trocas-img.jpeg" alt="">
+                        </div>
+                        <div class="title">
+                          <span>TROCAS</span>
+                          <span>& INSTALAÇÕES</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content-details">
+                            <p >Saiba mais sobre Serviços Especializados</p>
+                        </div>
+                        <div class="image_container">
+                            <img src="img/home/servicos-img.jpg" alt="">
+                        </div>
+                        <div class="title">
+                          <span>SERVIÇOS ESPECIALIZADOS</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sobre-container">
+                <h1 style="font-size: 2rem;">Sobre Nós</h1>
+                <div class="sobre">
+                    <div class="sobre-img">
+                        <img src="img/sobre.jpeg" alt="Imagem sobre nós">
+                    </div>
+                    <div class="sobre-texto">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis mauris lectus. Ut elementum lorem vel vehicula molestie. Curabitur quam est, efficitur in justo finibus, auctor elementum felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vitae condimentum nibh, at tempus tortor. Ut dapibus nulla arcu. Etiam egestas elit sit amet iaculis aliquet. Ut tempor condimentum felis sit amet dictum. Phasellus vestibulum molestie viverra.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="localizacao-container">
+                <div class="localizacao">
+                    <h1>Localização</h1>
+                    <div style="width: 100%">
+                        <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=R.%20Ant%C3%B4nio%20de%20Oliveira,%2041%20-%20Vila%20Augusta,%20Sorocaba%20-%20SP,%2018040-120+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                            <a href="https://www.gps.ie/">gps handsets</a>
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--   Rodapé   -->
+        <footer>
+            <div class="logo">
+                <h1>INOVE Auto Center</h1>
+            </div>
+            <div class="texto">
+                <p>&copy; Todos os direitos reservados | Desenvolvido por: <span style="color: rgb(255, 88, 88);"> Felipe Augusto e Arthur Agapito </span></p>
+            </div>
+            <div class="follow">
+                <h2>Siga-nos: </h2>
+                <div class="redes">
+                    <i class='bx bxl-instagram' ></i>
+                    <i class='bx bxl-facebook' ></i>
+                    <i class='bx bxl-whatsapp' ></i>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="js/navbar.js"></script>
 </html>
+
