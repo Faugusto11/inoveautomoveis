@@ -6,7 +6,11 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: linear-gradient(to right top, #ffffff, #f8f8f8, #f1f1f1, #eaeaea, #e3e3e3);
+    background-color: rgb(231, 231, 231);
+}
+
+main{
+    margin-top: 80px;
 }
 
 /*   Estilo do rodapé   */

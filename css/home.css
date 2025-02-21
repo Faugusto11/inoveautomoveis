@@ -20,7 +20,9 @@ main{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 60vh;
+    height: fit-content;
+    padding-top: 30px;
+    padding-bottom: 10vh;
 }
 
 .propaganda{
@@ -192,6 +194,66 @@ main{
   }
   
 
+/*   Estilo do modal de servicos   */
+
+.modal{
+    height: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.modal-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #242323;
+    border-radius: 30px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: fit-content;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    img{
+        border-radius: 60px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: 30vh;
+        width: fit-content;
+    }
+    .modal-text{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.modal-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: fit-content;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.modal::-webkit-scrollbar{
+    display: none;
+}
+
 /*   Estilo do sobre   */
 
 .sobre-container{
@@ -276,6 +338,20 @@ main{
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .modal-content{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: fit-content;
+        width: 80vw;
+        padding: 15px;
+        img{
+            width: 80%;
+            height: fit-content;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .propaganda h1{
         font-size: 2rem;
@@ -311,6 +387,10 @@ main{
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    .modal-content img{
+        display: none;
     }
 
     .sobre{
@@ -352,6 +432,19 @@ main{
     .content-details{
         p{
             width: 90%;
+        }
+    }
+}
+
+@media screen and (max-height: 700px){
+    .modal-content{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: fit-content;
+        width: 80vw;
+        padding: 15px;
+        img{
+            display: none;
         }
     }
 }
