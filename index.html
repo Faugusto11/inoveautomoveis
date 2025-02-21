@@ -12,9 +12,12 @@
         <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <!--   Estilos  -->
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="css/model.css">
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/teste.css">
+
         <!--   SwiperJS  -->
         <!--<link
             rel="stylesheet"
@@ -151,9 +154,7 @@
                 <h2><i class='bx bxs-group'></i> CONFIANÇA TOTAL</h2>
             </div>
 
-            <section class="servico-container">
-                <h1 style="font-size: 2rem; margin: 0;">Nossos Serviços</h1>
-                <div class="cards">
+                <!--<div class="cards">
                     <div class="card" onclick="toggleModal(document.getElementById('manutencao'))">
                         <div class="content-details">
                             <p >Saiba mais sobre Manutenção e Diagnóstico</p>
@@ -199,6 +200,51 @@
                           <span>SERVIÇOS ESPECIALIZADOS</span>
                         </div>
                     </div>
+                </div>-->
+
+                <section class="servicos-container">
+
+                <div class="container-cards swiper">
+                    <div class="card-wrapper">
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img class="card-image" src="img/home/manutencao-img.jpg" alt="">
+                                    <p class="badge">Manutenção e Diagnóstico</p>
+                                    <h2 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                                    <button class="card-button material-symbols-rounded"><i class='bx bx-right-arrow-alt'></i></button>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img class="card-image" src="img/home/reparos-img.webp" alt="">
+                                    <p class="badge reparos">Reparos Gerais</p>
+                                    <h2 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                                    <button class="card-button material-symbols-rounded"><i class='bx bx-right-arrow-alt'></i></button>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img class="card-image" src="img/home/trocas-img.jpeg" alt="">
+                                    <p class="badge trocas">Trocas & Instalações</p>
+                                    <h2 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                                    <button class="card-button material-symbols-rounded"><i class='bx bx-right-arrow-alt'></i></button>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img class="card-image" src="img/home/manutencao-img.jpg" alt="">
+                                    <p class="badge servicos">Serviços Especializados</p>
+                                    <h2 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                                    <button class="card-button material-symbols-rounded"><i class='bx bx-right-arrow-alt'></i></button>
+                                </a>
+                            </li>
+                        </ul>
+            
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
                 </div>
             </section>
 
@@ -220,7 +266,7 @@
                 <div class="localizacao">
                     <h1>Localização</h1>
                     <div style="width: 100%">
-                        <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=R.%20Ant%C3%B4nio%20de%20Oliveira,%2041%20-%20Vila%20Augusta,%20Sorocaba%20-%20SP,%2018040-120+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        <iframe width="80%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=R.%20Ant%C3%B4nio%20de%20Oliveira,%2041%20-%20Vila%20Augusta,%20Sorocaba%20-%20SP,%2018040-120+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                             <a href="https://www.gps.ie/">gps handsets</a>
                         </iframe>
                     </div>
@@ -248,6 +294,9 @@
     </body>
     <script src="js/navbar.js"></script>
     <script src="js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/teste.js"></script>
+
     <!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
 </html>
 
