@@ -20,7 +20,7 @@
     user-select: none;
     display: flex;
     flex-direction: column;
-    background-color: #1a1a1e;
+    background-color: #f2f1f1e6;
     padding: 18px;
     border-radius: 12px;
     text-decoration: none;
@@ -64,7 +64,7 @@
 
 }
 
-/*
+
 .card-list .card-link .badge.reparos{
     color: #5372F0;
     background-color: #DDE4FF;
@@ -79,13 +79,14 @@
 .card-list .card-link .badge.servicos{
     color: #B25A2B;
     background-color: #FFE3D2;
-}*/
+}
 
 .card-title{
     font-size: 1.19rem;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight: 600;
     transition: all 0.3s;
+    text-align: left;
 }
 
 .card-list .card-link .card-button{
