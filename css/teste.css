@@ -20,14 +20,14 @@
     user-select: none;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #1a1a1e;
     padding: 18px;
     border-radius: 12px;
     text-decoration: none;
     border: 2px solid transparent;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     transition: 0.2s ease;
-
+    max-width: 55vw;
 }
 
 
@@ -64,6 +64,7 @@
 
 }
 
+/*
 .card-list .card-link .badge.reparos{
     color: #5372F0;
     background-color: #DDE4FF;
@@ -78,11 +79,11 @@
 .card-list .card-link .badge.servicos{
     color: #B25A2B;
     background-color: #FFE3D2;
-}
+}*/
 
 .card-title{
     font-size: 1.19rem;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 600;
     transition: all 0.3s;
 }
@@ -131,7 +132,16 @@
 
 @media screen and (max-width: 768px){
     .card-wrapper{
+        margin-left: 17vw;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .card-wrapper{
         margin: 0 10px 25px;
+        .card-list .card-item .card-link{
+            max-width: 100vw;
+        }
     }
     .card-wrapper .swiper-slide-button{
         display: none;

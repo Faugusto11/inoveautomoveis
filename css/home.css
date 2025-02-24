@@ -93,6 +93,12 @@ main{
 
 /*   Estilo dos serviços   */
 
+.servicos-container{
+    text-align: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
 .container-cards{
     display: flex;
     align-items: center;
