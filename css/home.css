@@ -45,6 +45,7 @@ main{
 
 .propaganda p{
     font-size: 1.5rem;
+    margin-top: 10px;
 }
 
 .propaganda span{
@@ -64,6 +65,7 @@ main{
     color: white;
     display: flex;
     align-items: center;
+    margin-top: 20px;
     i{
         margin-left: 5px;
         font-size: 1.5rem;
