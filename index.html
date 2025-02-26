@@ -1,363 +1,391 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <!--   Metadados   -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta author="">
-        <meta description="">
-        <!--   Título  -->
-        <title>Home | INOVE Auto Center</title>
-        <!--   Ícones   -->
-        <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <!--   Estilos  -->
-        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-        <link rel="stylesheet" href="css/model.css">
-        <link rel="stylesheet" href="css/home.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/teste.css">
 
-        <!--   SwiperJS  -->
-        <!--<link
+<head>
+    <!--   Metadados   -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="">
+    <meta description="">
+    <!--   Título  -->
+    <title>Home | INOVE Auto Center</title>
+    <!--   Ícones   -->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!--   Estilos  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/model.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <!--   SwiperJS  -->
+    <!--<link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />!-->
-           
-    </head>
-    <body>
-        <!--   Navegação   -->
-        <div class="collapse">
-            <div class="close">
-                <i class="bx bx-x" onclick="toggleCollapse()"></i>
-            </div>
-            <ul class="nav-list-collpase">
-                <li><a href="index.html" class="active"><i class='bx bx-home'></i> Home</a></li>
-                <li><a href="teste.html"><i class='bx bx-info-circle' ></i> Sobre nós</a></li>
-                <li><a href="teste.html"><i class='bx bx-wrench'></i> Serviços</a></li>
-                <li><a href="teste.html"><i class='bx bx-user' ></i> Contato</a></li>
-            </ul>
+
+</head>
+
+<body>
+    <!--   Navegação   -->
+    <div class="collapse">
+        <div class="close">
+            <i class="bx bx-x" onclick="toggleCollapse()"></i>
         </div>
-        <nav>
-            <i class="bx bx-menu" onclick="toggleCollapse()"></i>
-            <div class="logo">
-                <img src="img/logo.png" alt="">
-            </div>
-            <ul class="nav-list">
-                <li><a href="index.html" class="active"><i class='bx bx-home'></i> Home</a></li>
-                <li><a href="sobre.html"><i class='bx bx-info-circle' ></i> Sobre nós</a></li>
-                <li><a href="servicos.html"><i class='bx bx-wrench'></i> Serviços</a></li>
-                <li><a href="contato.html"><i class='bx bx-user' ></i> Contato</a></li>
-            </ul>
-        </nav>
+        <ul class="nav-list-collpase">
+            <li><a href="index.html" class="active"><i class='bx bx-home'></i> Home</a></li>
+            <li><a href="teste.html"><i class='bx bx-info-circle'></i> Sobre nós</a></li>
+            <li><a href="teste.html"><i class='bx bx-wrench'></i> Serviços</a></li>
+            <li><a href="teste.html"><i class='bx bx-user'></i> Contato</a></li>
+        </ul>
+    </div>
+    <nav>
+        <i class="bx bx-menu" onclick="toggleCollapse()"></i>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html" class="active"><i class='bx bx-home'></i> Home</a></li>
+            <li><a href="sobre.html"><i class='bx bx-info-circle'></i> Sobre nós</a></li>
+            <li><a href="servicos.html"><i class='bx bx-wrench'></i> Serviços</a></li>
+            <li><a href="contato.html"><i class='bx bx-user'></i> Contato</a></li>
+        </ul>
+    </nav>
 
-        <!--   Whatsapp Flutuante   -->
+    <!--   Whatsapp Flutuante   -->
 
-        <!--   Modals   -->
-        <div class="modals">
+    <div class="whatsappFlutuante">
+        <a href="https://wa.me/559999999999" target="_blank">
+            <i class="bx bxl-whatsapp"></i>
+        </a>
+    </div>
 
-            <div class="modal" id="manutencao">
-                <div class="modal-content">
-                    <div class="modal-close" onclick="toggleModal(document.getElementById('manutencao'))">
-                        <i class="bx bx-x"></i>
-                    </div>
-                    <img src="img/home/manutencao-img.jpg" class="modal-image">
-                    <div class="modal-text">
-                        <h2>Manutenção e Diagnóstico</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia. Quisquam, repellat. Quos, quia. Quisquam, repellat.
-                            <ul>
-                                <li>Item 1</li>
-                                <li>Item 2</li>
-                                <li>Item 3</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal" id="reparos">
-                <div class="modal-content">
-                    <div class="modal-close" onclick="toggleModal(document.getElementById('reparos'))">
-                        <i class="bx bx-x"></i>
-                    </div>
-                    <img src="img/home/reparos-img.webp" class="modal-image">
-                    <div class="modal-text">
-                        <h2>Reparos</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia. Quisquam, repellat. Quos, quia. Quisquam, repellat.
-                            <ul>
-                                <li>Item 1</li>
-                                <li>Item 2</li>
-                                <li>Item 3</li>
-                            </ul>
-                        </p>
-                    </div>   
-                </div>
+    <!-- Modal Content -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <!-- Motor e Transmissão -->
+            <div class="modal-content" data-category="motor">
+                <span class="close">&times;</span>
+                <h2>Motor e Transmissão</h2>
+                <h4>Nossos serviços para motor e transmissão:</h4>
+                <ul>
+                    <li>Diagnóstico completo do motor</li>
+                    <li>Troca de óleo e filtros</li>
+                    <li>Reparo de cabeçote e válvulas</li>
+                    <li>Manutenção de transmissão</li>
+                    <li>Troca de correia dentada</li>
+                    <li>Reparo de sistema de escapamento</li>
+                    <li>Ajuste de motores</li>
+                    <li>Troca de velas de ignição</li>
+                </ul>
             </div>
 
-            <div class="modal" id="trocas">
-                <div class="modal-content">
-                    <div class="modal-close" onclick="toggleModal(document.getElementById('trocas'))">
-                        <i class="bx bx-x"></i>
-                    </div>
-                    <img src="img/home/servicos-img.jpg" class="modal-image">
-                    <div class="modal-text">
-                        <h2>Trocas e Instalações</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia. Quisquam, repellat. Quos, quia. Quisquam, repellat.
-                            <ul>
-                                <li>Item 1</li>
-                                <li>Item 2</li>
-                                <li>Item 3</li>
-                            </ul>
-                        </p>
-                    </div>   
-                </div>
+            <!-- Suspensão e Direção -->
+            <div class="modal-content" data-category="suspensao">
+                <span class="close">&times;</span>
+                <h2>Suspensão e Direção</h2>
+                <h4>Nossos serviços para suspensão e direção:</h4>
+                <ul>
+                    <li>Balanceamento de rodas</li>
+                    <li>Troca de amortecedores</li>
+                    <li>Reparo de sistema de direção</li>
+                    <li>Inspeção de segurança veicular</li>
+                    <li>Troca de pneus</li>
+                    <li>Revisão de bieletas e terminais</li>
+                    <li>Geometria de suspensão</li>
+                </ul>
             </div>
 
-            <div class="modal" id="servicos">
-                <div class="modal-content">
-                    <div class="modal-close" onclick="toggleModal(document.getElementById('servicos'))">
-                        <i class="bx bx-x"></i>
-                    </div>
-                    <img src="img/home/trocas-img.jpeg" class="modal-image">
-                    <div class="modal-text">
-                        <h2>Serviços Especializados</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quia. Quisquam, repellat. Quos, quia. Quisquam, repellat.
-                            <ul>
-                                <li>Item 1</li>
-                                <li>Item 2</li>
-                                <li>Item 3</li>
-                            </ul>
-                        </p>
-                    </div>   
-                </div>
+            <!-- Freios e Segurança -->
+            <div class="modal-content" data-category="freios">
+                <span class="close">&times;</span>
+                <h2>Freios e Segurança</h2>
+                <h4>Nossos serviços para freios e segurança:</h4>
+                <ul>
+                    <li>Troca de pastilhas e discos</li>
+                    <li>Retifica de tambores</li>
+                    <li>Bleeding do sistema hidráulico</li>
+                    <li>Troca de fluído de freio</li>
+                    <li>Diagnóstico do ABS</li>
+                    <li>Reparo de mangueiras</li>
+                    <li>Inspeção do sistema de freio</li>
+                    <li>Manutenção preventiva</li>
+                </ul>
+            </div>
+
+            <!-- Elétrico e Climatização -->
+            <div class="modal-content" data-category="eletrica">
+                <span class="close">&times;</span>
+                <h2>Elétrico e Climatização</h2>
+                <h4>Nossos serviços para sistemas elétricos e climatização:</h4>
+                <ul>
+                    <li>Diagnóstico elétrico completo</li>
+                    <li>Manutenção de bateria</li>
+                    <li>Reparo de alternador</li>
+                    <li>Instalação de alarme</li>
+                    <li>Manutenção de ar-condicionado</li>
+                    <li>Recarga de gás refrigerante</li>
+                    <li>Reparo de sistema elétrico</li>
+                    <li>Troca de compressor</li>
+                    <li>Reparo de vidros elétricos</li>
+                </ul>
             </div>
         </div>
+    </div>
 
-        <!--   Conteúdo   -->
-        <main>
-            <!--section hero-->
-            <section class="propaganda-container">
-                <div class="propaganda">
-                    <h1>INOVE Auto Center</h1>
-                    <h2>Serviços Automotivos</h2>
-                    <p>Escolha o melhor <span>para você</span></p>
-                    <button>Agendar sua visita <i class='bx bxl-whatsapp' ></i></button>
-                </div>
-            </section>
-            <!--fim da section hero-->
-            
-            <div class="faixa">
-                <h2><i class='bx bx-package'></i> ENTREGA RÁPIDA</h2>
-                <h2><i class='bx bxs-check-shield' ></i> QUALIDADE GARANTIDA</h2>
-                <h2><i class='bx bxs-group'></i> CONFIANÇA TOTAL</h2>
+    <!--   Conteúdo   -->
+    <main>
+        <!--section hero-->
+        <section class="propaganda-container">
+            <div class="propaganda">
+                <h1>INOVE Auto Center</h1>
+                <h2>Serviços Automotivos</h2>
+                <p>Escolha o melhor <span>para você</span></p>
+                <button>Agende sua visita <i class='bx bxl-whatsapp'></i></button>
             </div>
+        </section>
+        <!--fim da section hero-->
 
-            <section class="sobre-container">
-                <h1 style="font-size: 2rem;">Sobre Nós</h1>
-                <div class="sobre">
-                    <div class="sobre-img">
-                        <img src="img/sobre.jpeg" alt="Imagem sobre nós">
-                    </div>
-                    <div class="sobre-texto">
-                        <p>
-                            "A INOVE vem com uma proposta diferenciada para o gerenciamento de manutenção frotas e veículos particulares. Unindo qualidade honestidade oferecendo oque a mais novo em tecnologia em manutenção automotiva com preço justo."
-                        </p>
-                    </div>
-                </div>
-            </section>
+        <!--faixa-->
+        <div class="faixa">
+            <h2><i class='bx bx-package'></i> ENTREGA RÁPIDA</h2>
+            <h2><i class='bx bxs-check-shield'></i> QUALIDADE GARANTIDA</h2>
+            <h2><i class='bx bxs-group'></i> CONFIANÇA TOTAL</h2>
+        </div>
+        <!--fim da faixa-->
 
-            <section class="servicos-container">
-                <h1>Nossos Serviços</h1>
-                <div class="container-cards swiper">
-                    <div class="card-wrapper">
-                        <ul class="card-list swiper-wrapper">
-                            <li class="card-item swiper-slide" onclick="toggleModal(document.getElementById('manutencao'))">
-                                <div class="card-link">
-                                    <img class="card-image" src="img/home/manutencao-img.jpg" alt="">
-                                    <p class="badge">Manutenção e Diagnóstico</p>
-                                    <h2 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-                                    <button class="card-button material-symbols-rounded"><i class='bx bx-right-arrow-alt'></i></button>
-                                </div>
-                            </li>
-                            <li class="card-item swiper-slide" onclick="toggleModal(document.getElementById('reparos'))">
-                                <div class="card-link">
-                                    <img class="card-image" src="img/home/reparos-img.webp" alt="">
-                                    <p class="badge reparos">Reparos Gerais</p>
-                                    <h2 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-                                    <button class="card-button material-symbols-rounded"><i class='bx bx-right-arrow-alt'></i></button>
-                                </div>
-                            </li>
-                            <li class="card-item swiper-slide" onclick="toggleModal(document.getElementById('trocas'))">
-                                <div class="card-link">
-                                    <img class="card-image" src="img/home/trocas-img.jpeg" alt="">
-                                    <p class="badge trocas">Trocas & Instalações</p>
-                                    <h2 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-                                    <button class="card-button material-symbols-rounded"><i class='bx bx-right-arrow-alt'></i></button>
-                                </div>
-                            </li>
-                            <li class="card-item swiper-slide" onclick="toggleModal(document.getElementById('servicos'))">
-                                <div class="card-link">
-                                    <img class="card-image" src="img/home/manutencao-img.jpg" alt="">
-                                    <p class="badge servicos">Serviços Especializados</p>
-                                    <h2 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-                                    <button class="card-button material-symbols-rounded"><i class='bx bx-right-arrow-alt'></i></button>
-                                </div>
-                            </li>
-                        </ul>
-            
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-slide-button swiper-button-prev"></div>
-                        <div class="swiper-slide-button swiper-button-next"></div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="testimonials-container">
-                <h1>Depoimentos</h1>
-                <h3>Avaliação dos <span style="color: #b5053f; text-decoration: underline   ;">nossos clientes</span></h3>
-                <div class="cards-testimonials">
-                    <figure class="snip1533">
-                        <div class="icon">
-                            <i class="bx bxs-quote-right"></i>
+        <!--sobre nos-->
+        <section class="sobre-container">
+            <div class="background"> </div>
+            <div class="textos-sobre">
+                <div class="coluna-sobre">
+                    <div class="subtitle-sobre">
+                        <div class="vertical-hr"></div>
+                        <div class="title-sobre">
+                            <h1>Sobre</h1>
+                            <span>Nossa Oficina</span>
                         </div>
-                        <figcaption>
-                          <blockquote>
+                    </div>
+                    <p>
+                        Desde 2023 oferecemos serviços de manutenção de alta qualidade para veículos de todas as marcas, inclusive híbridos e elétricos, garantindo a satisfação dos clientes. Estamos sempre a postos para atender suas necessidades com eficiência e dedicação.
+                    </p>
+                </div>
+                <div class="quem-somos">
+                    <div class="topicos-sobre">
+                        <div>
+                            <i class="ph ph-users icon"></i>
+                            <div class="textinhos">
+                                <h1>Equipe Qualificada</h1>
+                                <p>Somos uma equipe qualificada com experiência em manutenção de carros de grandes frotas.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="ph ph-wrench icon"></i>
+                            <div class="textinhos">
+                                <h1>Diagnóstico Preciso</h1>
+                                <p>Processos de checagem mais precisos e minuciosos dos veículos, com menor índice de erro nos diagnósticos.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="ph ph-car icon"></i>
+                            <div class="textinhos">
+                                <h1>Infraestrutura Moderna</h1>
+                                <p>Equipamentos de ultima geração que atendem todas as marcas do mercado inclusive automóveis híbridos e elétricos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!--fim da sobre nos-->
+
+        <section class="servicos-container">
+            <h1>Nossos Serviços</h1>
+            <div class="container-cards swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <div class="card-link" data-category="motor">
+                                <img class="card-image" src="img/home/manutencao-img.jpg" alt="">
+                                <p class="badge">Motor e Transmissão</p>
+                                <h2 class="card-title">Serviços completos</h2>
+                                <button class="card-button material-symbols-rounded"><i
+                                        class='bx bx-right-arrow-alt'></i></button>
+                            </div>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <div class="card-link" data-category="suspensao">
+                                <img class="card-image" src="img/home/reparos-img.webp" alt="">
+                                <p class="badge reparos">Suspensão e Direção</p>
+                                <h2 class="card-title">Conforto e segurança</h2>
+                                <button class="card-button material-symbols-rounded"><i
+                                        class='bx bx-right-arrow-alt'></i></button>
+                            </div>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <div class="card-link" data-category="freios">
+                                <img class="card-image" src="img/home/trocas-img.jpeg" alt="">
+                                <p class="badge trocas">Freios e Segurança</p>
+                                <h2 class="card-title">Sistema de frenagem</h2>
+                                <button class="card-button material-symbols-rounded"><i
+                                        class='bx bx-right-arrow-alt'></i></button>
+                            </div>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <div class="card-link" data-category="eletrica">
+                                <img class="card-image" src="img/home/manutencao-img.jpg" alt="">
+                                <p class="badge servicos">Elétrico e Climatização</p>
+                                <h2 class="card-title">Sistemas integrados</h2>
+                                <button class="card-button material-symbols-rounded"><i
+                                        class='bx bx-right-arrow-alt'></i></button>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-container">
+            <h1>Depoimentos</h1>
+            <h3>Avaliação dos <span style="color: #b5053f; text-decoration: underline   ;">nossos clientes</span></h3>
+            <div class="cards-testimonials">
+                <figure class="snip1533">
+                    <div class="icon">
+                        <i class="bx bxs-quote-right"></i>
+                    </div>
+                    <figcaption>
+                        <blockquote>
                             <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
-                          </blockquote>
-                          <h3>Wisteria Ravenclaw</h3>
-                          <h4>Google Inc.</h4>
-                        </figcaption>
-                    </figure>
-                    <figure class="snip1533">
-                        <div class="icon">
-                            <i class="bx bxs-quote-right"></i>
-                        </div>
-                        <figcaption>
-                            <blockquote>
-                                <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
-                            </blockquote>
-                            <h3>Ursula Gurnmeister</h3>
-                            <h4>Facebook</h4>
-                        </figcaption>
-                    </figure>
-                    <figure class="snip1533">
-                        <div class="icon">
-                            <i class="bx bxs-quote-right"></i>
-                        </div>
-                        <figcaption>
-                            <blockquote>
-                                <p>The only skills I have the patience to learn are those that have no real application in life. </p>
-                            </blockquote>
-                            <h3>Ingredia Nutrisha</h3>
-                            <h4>Twitter</h4>
-                        </figcaption>
-                    </figure>
-                    <figure class="snip1533">
-                        <div class="icon">
-                            <i class="bx bxs-quote-right"></i>
-                        </div>
-                        <figcaption>
-                            <blockquote>
-                                <p>The only skills I have the patience to learn are those that have no real application in life. </p>
-                            </blockquote>
-                            <h3>Ingredia Nutrisha</h3>
-                            <h4>Twitter</h4>
-                        </figcaption>
-                    </figure>
-                    <figure class="snip1533">
-                        <div class="icon">
-                            <i class="bx bxs-quote-right"></i>
-                        </div>
-                        <figcaption>
-                            <blockquote>
-                                <p>The only skills I have the patience to learn are those that have no real application in life. </p>
-                            </blockquote>
-                            <h3>Ingredia Nutrisha</h3>
-                            <h4>Twitter</h4>
-                        </figcaption>
-                    </figure>
-                    <figure class="snip1533">
-                        <div class="icon">
-                            <i class="bx bxs-quote-right"></i>
-                        </div>
-                        <figcaption>
-                            <blockquote>
-                                <p>The only skills I have the patience to learn are those that have no real application in life. </p>
-                            </blockquote>
-                            <h3>Ingredia Nutrisha</h3>
-                            <h4>Twitter</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-            </section>
+                        </blockquote>
+                        <h3>Wisteria Ravenclaw</h3>
+                        <h4>Google Inc.</h4>
+                    </figcaption>
+                </figure>
+                <figure class="snip1533">
+                    <div class="icon">
+                        <i class="bx bxs-quote-right"></i>
+                    </div>
+                    <figcaption>
+                        <blockquote>
+                            <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+                        </blockquote>
+                        <h3>Ursula Gurnmeister</h3>
+                        <h4>Facebook</h4>
+                    </figcaption>
+                </figure>
+                <figure class="snip1533 second">
+                    <div class="icon">
+                        <i class="bx bxs-quote-right"></i>
+                    </div>
+                    <figcaption>
+                        <blockquote>
+                            <p>The only skills I have the patience to learn are those that have no real application in
+                                life. </p>
+                        </blockquote>
+                        <h3>Ingredia Nutrisha</h3>
+                        <h4>Twitter</h4>
+                    </figcaption>
+                </figure>
+                <figure class="snip1533 second">
+                    <div class="icon">
+                        <i class="bx bxs-quote-right"></i>
+                    </div>
+                    <figcaption>
+                        <blockquote>
+                            <p>The only skills I have the patience to learn are those that have no real application in
+                                life. </p>
+                        </blockquote>
+                        <h3>Ingredia Nutrisha</h3>
+                        <h4>Twitter</h4>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
 
-            <section class="localizacao-container">
-                <div class="localizacao">
-                    <h1>Localização</h1>
-                    <div style="width: 100%">
-                        <iframe width="80%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=R.%20Ant%C3%B4nio%20de%20Oliveira,%2041%20-%20Vila%20Augusta,%20Sorocaba%20-%20SP,%2018040-120+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-                            <a href="https://www.gps.ie/">gps handsets</a>
-                        </iframe>
-                    </div>
-                </div>
-            </section>
-
-            <section class="contato-container">
-                <div class="contato">
-                    <div class="contato-info">
-                        <h1 style="font-size: 2rem;">Contate-nos</h1>
-                        <div class="contato-texto">
-                            <p style="font-size: 0.8rem; margin-bottom: 1rem;">Estamos Aqui Para Ajudar! Se você tiver alguma dúvida, sugestão ou precisa de assistência, não hesite em nos contatar.</p>
-                            <p>
-                                <hr>
-                                <span>Whatsapp:</span> <a href="https://wa.me/5511999999999">(11) 99999-9999</a>
-                                <br>
-                                <span>E-mail:</span> <a href="mailto:3oK0d@example.com?subject=agendamento">3oK0d@example.com</a>
-                                <br>
-                                <span>Endereço:</span> <a href="https://www.google.com/maps/place/R.+Ant%C3%B4nio+de+Oliveira,+41+-+Vila+Augusta,+Sorocaba+-+SP,+18040-120/@-23.714697,-47.404236,17z/data=!3m1!4b1!4m5!3m4!1s0x94c9c7b2b2c7b2b2:0x4f5f2e3b2b2b2b2b!8m2!3d-23.714697!4d-47.404236">Rua Antônio de Oliveira, 41 - Vila Augusta, Sorocaba - SP</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="contato-imagem">
-                        <img src="img/home/contato-imagem.jpg" alt="">
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--   Rodapé   -->
-        <footer>
-            <div class="container">
-                <div class="logo">
-                    <h1>INOVE Auto Center</h1>
-                </div>
-                <div class="atendimento">
-                    <h2>Atendimento</h2>
-                    <p>Segunda a Sexta das 8h às 18h</p>
-                    <p><a href="tel: +5511999999999">Telefone: (11) 9999-9999</a></p>
-                    <p><a href="https://google.com/maps/place/R.+Ant%C3%B4nio+de+Oliveira,+41+-+Vila+Augusta,+Sorocaba+-+SP,+18040-120/@-23.714697,-47.404236,17z/data=!3m1!4b1!4m5!3m4!1s0x94c9c7b2b2c7b2b2:0x4f5f2e3b2b2b2b2b!8m2!3d-23.714697!4d-47.404236">Endereço: Rua Antônio de Oliveira, 41 - Vila Augusta, Sorocaba - SP. CEP: 18040-120</a></p>                </div>            
-                <div class="follow">
-                    <h2>Siga-nos: </h2>
-                    <div class="redes">
-                        <a href="https://www.instagram.com/inoveautocenter_/" target="_blank" class="instagram"><i class='bx bxl-instagram' ></i>
-                        <a href="" class="facebook" target="_blank"><i class='bx bxl-facebook' ></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=551199999999" target="_blank" class="whatsapp"><i class='bx bxl-whatsapp' ></i></a>
-                    </div>
+        <section class="localizacao-container">
+            <div class="localizacao">
+                <h1>Localização</h1>
+                <div style="width: 100%">
+                    <iframe width="80%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=R.%20Ant%C3%B4nio%20de%20Oliveira,%2041%20-%20Vila%20Augusta,%20Sorocaba%20-%20SP,%2018040-120+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        <a href="https://www.gps.ie/">gps handsets</a>
+                    </iframe>
                 </div>
             </div>
-            <hr>
-            <p>&copy; Copyright 2025 INOVE Auto Center | Desenvolvido por: <span style="color: rgb(152, 152, 152);"> Felipe Augusto e Arthur Agapito </span></p>
-        </footer>
-    </body>
-    <script src="js/navbar.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/teste.js"></script>
+        </section>
 
-    <!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
+        <section class="contato-container">
+            <div class="contato">
+                <div class="contato-info">
+                    <h1 style="font-size: 2rem;">Contate-nos</h1>
+                    <div class="contato-texto">
+                        <p style="font-size: 0.8rem; margin-bottom: 1rem;">Estamos Aqui Para Ajudar! Se você tiver
+                            alguma dúvida, sugestão ou precisa de assistência, não hesite em nos contatar.</p>
+                        <p>
+                            <hr>
+                            <span>Whatsapp:</span> <a href="https://wa.me/5511999999999">(11) 99999-9999</a>
+                            <br>
+                            <span>E-mail:</span> <a
+                                href="mailto:3oK0d@example.com?subject=agendamento">3oK0d@example.com</a>
+                            <br>
+                            <span>Endereço:</span> <a
+                                href="https://www.google.com/maps/place/R.+Ant%C3%B4nio+de+Oliveira,+41+-+Vila+Augusta,+Sorocaba+-+SP,+18040-120/@-23.714697,-47.404236,17z/data=!3m1!4b1!4m5!3m4!1s0x94c9c7b2b2c7b2b2:0x4f5f2e3b2b2b2b2b!8m2!3d-23.714697!4d-47.404236">Rua
+                                Antônio de Oliveira, 41 - Vila Augusta, Sorocaba - SP</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="contato-imagem">
+                    <img src="img/home/contato-imagem.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--   Rodapé   -->
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <h1>INOVE Auto Center</h1>
+            </div>
+            <div class="atendimento">
+                <h2>Atendimento</h2>
+                <p>Segunda a Sexta das 8h às 18h</p>
+                <p><a href="tel: +5511999999999">Telefone: (11) 9999-9999</a></p>
+                <p><a
+                        href="https://google.com/maps/place/R.+Ant%C3%B4nio+de+Oliveira,+41+-+Vila+Augusta,+Sorocaba+-+SP,+18040-120/@-23.714697,-47.404236,17z/data=!3m1!4b1!4m5!3m4!1s0x94c9c7b2b2c7b2b2:0x4f5f2e3b2b2b2b2b!8m2!3d-23.714697!4d-47.404236">Endereço:
+                        Rua Antônio de Oliveira, 41 - Vila Augusta, Sorocaba - SP. CEP: 18040-120</a></p>
+            </div>
+            <div class="follow">
+                <h2>Siga-nos: </h2>
+                <div class="redes">
+                    <a href="https://www.instagram.com/inoveautocenter_/" target="_blank" class="instagram"><i
+                            class='bx bxl-instagram'></i>
+                        <a href="" class="facebook" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=551199999999" target="_blank" class="whatsapp"><i
+                                class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p>&copy; Copyright 2025 INOVE Auto Center | Desenvolvido por: <span style="color: rgb(152, 152, 152);"> Felipe
+                Augusto e Arthur Agapito </span></p>
+    </footer>
+</body>
+<script src="js/navbar.js"></script>
+<script src="js/modal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/teste.js"></script>
+
+<!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
+
 </html>
-

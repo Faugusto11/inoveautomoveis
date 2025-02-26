@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+}
+
+.modal {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    animation: modalSlide 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #333;
+}
+
+@keyframes modalSlide {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    display: none;
+    color: #fff;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: #666;
+    font-size: 2.5rem;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #b5053f;
+}
+
+.modal h2 {
+    color: #b5053f;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.modal h4{
+    color: #b5053f;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.modal ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.8rem;
+}
+
+.modal li {
+    padding: 1rem;
+    background: #252525;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.modal li:hover {
+    transform: translateX(5px);
+    background: #2a2a2a;
+}
+
+.modal-overlay.active {
+    display: flex;
+  }
+  
+  .modal {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  /* Garantir que a navbar fique acima */
+  .navbar {
+    position: relative;
+    z-index: 1001;
+  }
+  
+  /* Melhorar a responsividade */
+  @media (max-width: 768px) {
+    .modal {
+      width: 95%;
+      padding: 1rem;
+    }
+    
+    .modal h2 {
+      font-size: 1.5rem;
+    }
+    
+    .modal li {
+      padding: 0.8rem;
+      font-size: 0.9rem;
+    }
+  }
+
+body.modal-open {
+    overflow: hidden;
+    padding-right: 15px; /* Compensa a barra de scroll */
+  }
+  
+  .modal {
+    max-height: 90vh;
+    overflow-y: auto;
+  }

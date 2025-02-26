@@ -18,9 +18,23 @@ body{
     border-radius: 50%;
     background-color: rgb(0, 255, 0);
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: white;
+    justify-content: center;
+    z-index: 999;
+    cursor: pointer;
+    font-size: 26px;
+    transition: all 0.3s;
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.whatsappFlutuante:hover{
+    scale: 1.1;
 }
 
 main{

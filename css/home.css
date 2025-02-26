@@ -89,11 +89,12 @@ main{
     text-align: center;
     color: white;
     gap: 5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 0.8rem;
 }
 
-/*   Estilo dos serviços   */
+/*   Estilo dos servicos   */
 
 .servicos-container{
     font-size: 22px;
@@ -108,195 +109,122 @@ main{
     justify-content: center;
 }
 
-/*   Estilo dos cards   */
-
-
-/*
-.cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    margin: 2rem;
-    flex-wrap: wrap;
-}
-
-.card {
-    position: relative;
-    background: rgb(33,33,33);
-    background: linear-gradient(86deg, rgba(33,33,33,1) 0%, rgba(56,56,56,1) 64%, rgba(47,47,47,1) 82%);
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 1rem;
-    width: 23rem;
-    border-radius: 1rem;
-    color: white;
-    transition: all 0.3s;
-    cursor: pointer;
-  }
-
-  .title span{
-    transition: all 0.3s;
-  }
-  
-  .card:hover{
-    transform: scale(1.1);
-    .image_container img{
-        opacity: 0.1;
-    }
-    .title span{
-        opacity: 0.2;
-    }
-  }
-
-  .image_container{
-    position: relative;
-    width: 100%;
-}
-
-.image_container img {
-    width: 100%;
-    height: 15rem;
-    border-radius: 0.5rem;
-    transition: all 0.3s;
-}
-
-.content-details{
-    position: absolute;
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-}
-
-.content-details{
-    p{
-        font-size: 13px;
-        text-decoration: underline;
-        cursor: pointer;
-        color: #ee0653;      
-    }
-    p:hover{
-        transform: scale(10rem);
-        cursor: pointer;    
-    }
-}
-
-  .title {
-    width: 100%;
-  
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: capitalize;
-    text-wrap: nowrap;
-  }*/
-
-/*   Estilo do modal de servicos   */
-
-.modal{
-    height: 0px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    z-index: 1;
-    transition: all 0.3s;
-    overflow: hidden;
-}
-
-.modal-content{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    background-color: #242323;
-    border-radius: 30px;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: fit-content;
-    width: fit-content;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    img{
-        border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        height: 30vh;
-        width: fit-content;
-    }
-    .modal-text{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        overflow-y: hidden;
-    }
-}
-
-.modal-close{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: fit-content;
-    color: white;
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-
-.modal::-webkit-scrollbar{
-    display: none;
-}
-
-/*   Estilo do sobre   */
+/*   Estilo do sobre nos   */
 
 .sobre-container{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: rgb(221, 221, 221);
+    padding: 3rem 0 3rem 0
+}
+    
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-
-.sobre{
-    margin-top: 20px;
-    width: 60%;
     height: 100%;
+    background-image: url(../img/home/background-about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(40%);
+}
+
+.textos-sobre{
+    position: relative;
+    z-index: 1;
+    color: white;
     display: flex;
-    gap: 100px;
-    font-size: large;
-
+    text-align: left;
+    padding: 3rem;
+    width: 1200px;
+    justify-content: space-between;
+    gap: 10rem;
+}
+.title-sobre h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.title-sobre span{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+span{
+    color: #e6004d;
 }
 
-.sobre p{
+.coluna-sobre p {
     text-align: justify;
+    font-size: 1rem;
+    width: 600px;
 }
 
-.sobre-img img{
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.title-sobre{
+    display: flex;
+    flex-direction: column;
 }
 
-/*   Estilo da localização   */
+.subtitle-sobre{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.vertical-hr{
+    border-left: 5px solid #ee0653;; /* Define a espessura e a cor da linha */
+    height: 100px; /* Define a altura da linha */
+    margin: 0 0px;
+    padding: 0 5px;
+}
+
+.topicos-sobre{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 1rem;
+}
+.topicos-sobre div{
+    display: flex;
+    gap: 0.5rem 1rem;
+}
+.topicos-sobre .icon{
+    align-items: center;
+}
+
+.topicos-sobre .icon{
+    font-size: 4rem;
+    color: #ee0653;;
+}
+.topicos-sobre h1{
+    font-size: 1rem;
+}
+.textinhos{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: flex-start;
+}
+.textinhos p, li{
+    font-size: 0.8rem;
+}
+
+.quem-somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.quem-somos span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*   Estilo da localizacao   */
 
 .localizacao-container{
     width: 100%;
@@ -359,6 +287,8 @@ main{
 }
 
 /*testimonials*/
+
+
 .testimonials-container{
     width: 100%;
     height: fit-content;
@@ -387,7 +317,8 @@ main{
     text-align: center;
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(3, 3fr);
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -518,17 +449,6 @@ main{
 }
 
 @media screen and (max-width: 1024px) {
-    .modal-content{
-        overflow-y: scroll;
-        overflow-x: hidden;
-        height: fit-content;
-        width: 80vw;
-        padding: 15px;
-        img{
-            width: 80%;
-            height: fit-content;
-        }
-    }
     .contato-imagem img{
         max-width: 400px;
         border-radius: 2rem;
@@ -581,7 +501,9 @@ main{
         align-items: center;
         color: white;
         gap: 1rem;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
     }
 
     .faixa h2{
@@ -590,10 +512,6 @@ main{
         justify-content: center;
         align-items: center;
         text-align: center;
-    }
-
-    .modal-content img{
-        display: none;
     }
 
     .sobre{
@@ -639,15 +557,69 @@ main{
     }
 }
 
-@media screen and (max-height: 700px){
-    .modal-content{
-        overflow-y: scroll;
-        overflow-x: hidden;
-        height: fit-content;
-        width: 80vw;
-        padding: 15px;
-        img{
-            display: none;
-        }
+@media screen and (max-width: 700px){
+    .cards-testimonials{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .second{
+        display: none;
+    }
+    .snip1533{
+        max-width: 80%;
+    }
+    iframe{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .coluna-sobre p{
+        width: 70%;
+    }
+    .textos-sobre{
+        width: 100%;
+        flex-direction: column;
+        gap: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+
+    .coluna-sobre{
+        margin: 0;
+        padding: 0;
+    }
+    .quem-somos{
+        background-color: #242323;
+        border-radius: 1rem;
+        padding: 1rem;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .coluna-sobre p{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .coluna-sobre{
+        margin: 0;
+        padding: 20px;
+    }
+    .textos-sobre{
+        margin: 0;
+        padding: 0;
+        gap: 1rem;
+    }
+    .testimonials-container h1{
+        font-size: 1.7rem;
+    }
+    .testimonials-container h3{
+        font-size: 1.3rem;
     }
 }
