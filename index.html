@@ -37,10 +37,12 @@
             <i class="bx bx-x" onclick="toggleCollapse()"></i>
         </div>
         <ul class="nav-list-collpase">
-            <li><a href="index.html" class="active"><i class='bx bx-home'></i> Home</a></li>
-            <li><a href="teste.html"><i class='bx bx-info-circle'></i> Sobre nós</a></li>
-            <li><a href="teste.html"><i class='bx bx-wrench'></i> Serviços</a></li>
-            <li><a href="teste.html"><i class='bx bx-user'></i> Contato</a></li>
+            <li class="nav-item"><a href="#home" onclick="toggleCollapse()"><i class='bx bx-home'></i> Home</a></li>
+            <li class="nav-item"><a href="#sobre" onclick="toggleCollapse()"><i class='bx bx-info-circle'></i> Sobre nós</a></li>
+            <li class="nav-item"><a href="#servicos" onclick="toggleCollapse()"><i class='bx bx-wrench'></i> Serviços</a></li>
+            <li class="nav-item"><a href="#depoimentos" onclick="toggleCollapse()"><i class='bx bx-user'></i> Depoimentos</a></li>
+            <li class="nav-item"><a href="#localizacao" onclick="toggleCollapse()"><i class='bx bx-map'></i> Localização</a></li>
+            <li class="nav-item"><a href="#contato" onclick="toggleCollapse()"><i class='bx bx-phone'></i> Contato</a></li>
         </ul>
     </div>
     <nav>
@@ -49,17 +51,19 @@
             <img src="img/logo.png" alt="">
         </div>
         <ul class="nav-list">
-            <li><a href="index.html" class="active"><i class='bx bx-home'></i> Home</a></li>
-            <li><a href="sobre.html"><i class='bx bx-info-circle'></i> Sobre nós</a></li>
-            <li><a href="servicos.html"><i class='bx bx-wrench'></i> Serviços</a></li>
-            <li><a href="contato.html"><i class='bx bx-user'></i> Contato</a></li>
+            <li class="nav-item-pc"><a href="#home"><i class='bx bx-home'></i> Home</a></li>
+            <li class="nav-item-pc"><a href="#sobre"><i class='bx bx-info-circle'></i> Sobre nós</a></li>
+            <li class="nav-item-pc"><a href="#servicos"><i class='bx bx-wrench'></i> Serviços</a></li>
+            <li class="nav-item-pc"><a href="#depoimentos"><i class='bx bx-user'></i> Depoimentos</a></li>
+            <li class="nav-item-pc"><a href="#localizacao"><i class='bx bx-map'></i> Localização</a></li>
+            <li class="nav-item-pc"><a href="#contato"><i class='bx bx-phone'></i> Contato</a></li>
         </ul>
     </nav>
 
     <!--   Whatsapp Flutuante   -->
 
     <div class="whatsappFlutuante">
-        <a href="https://wa.me/559999999999" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=5515981414711" target="_blank">
             <i class="bx bxl-whatsapp"></i>
         </a>
     </div>
@@ -141,11 +145,11 @@
     <main>
         <!--section hero-->
         <section class="propaganda-container">
-            <div class="propaganda">
+            <div class="propaganda" id="home">
                 <h1>INOVE Auto Center</h1>
                 <h2>Serviços Automotivos</h2>
                 <p>Escolha o melhor <span>para você</span></p>
-                <button>Agende sua visita <i class='bx bxl-whatsapp'></i></button>
+                <a href="https://api.whatsapp.com/send?phone=5515981414711" target="_blank"><button>Agende sua visita <i class='bx bxl-whatsapp'></i></button></a>
             </div>
         </section>
         <!--fim da section hero-->
@@ -159,7 +163,7 @@
         <!--fim da faixa-->
 
         <!--sobre nos-->
-        <section class="sobre-container">
+        <section class="sobre-container" id="sobre">
             <div class="background"> </div>
             <div class="textos-sobre">
                 <div class="coluna-sobre">
@@ -205,7 +209,7 @@
 
         <!--fim da sobre nos-->
 
-        <section class="servicos-container">
+        <section class="servicos-container" id="servicos">
             <h1>Nossos Serviços</h1>
             <div class="container-cards swiper">
                 <div class="card-wrapper">
@@ -239,7 +243,7 @@
                         </li>
                         <li class="card-item swiper-slide">
                             <div class="card-link" data-category="eletrica">
-                                <img class="card-image" src="img/home/manutencao-img.jpg" alt="">
+                                <img class="card-image" src="img/home/servicos-img.jpg" alt="">
                                 <p class="badge servicos">Elétrico e Climatização</p>
                                 <h2 class="card-title">Sistemas integrados</h2>
                                 <button class="card-button material-symbols-rounded"><i
@@ -255,7 +259,7 @@
             </div>
         </section>
 
-        <section class="testimonials-container">
+        <section class="testimonials-container" id="depoimentos">
             <h1>Depoimentos</h1>
             <h3>Avaliação dos <span style="color: #b5053f; text-decoration: underline   ;">nossos clientes</span></h3>
             <div class="cards-testimonials">
@@ -265,10 +269,9 @@
                     </div>
                     <figcaption>
                         <blockquote>
-                            <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+                            <p style="margin-bottom: 60px;">"Excelente atendimento, profissionais muito competentes, valores de peças e mão de obra justos. Recomendo."  </p>
                         </blockquote>
-                        <h3>Wisteria Ravenclaw</h3>
-                        <h4>Google Inc.</h4>
+                        <h3>Tiago Massucatto</h3>
                     </figcaption>
                 </figure>
                 <figure class="snip1533">
@@ -277,10 +280,9 @@
                     </div>
                     <figcaption>
                         <blockquote>
-                            <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+                            <p style="margin-bottom: 60px;">"Excelente atendimento no meu Hyundai Creta 2015. Profissionais competentes e valores justos."</p>
                         </blockquote>
-                        <h3>Ursula Gurnmeister</h3>
-                        <h4>Facebook</h4>
+                        <h3>João Silva</h3>
                     </figcaption>
                 </figure>
                 <figure class="snip1533 second">
@@ -289,11 +291,10 @@
                     </div>
                     <figcaption>
                         <blockquote>
-                            <p>The only skills I have the patience to learn are those that have no real application in
-                                life. </p>
+                            <p style="margin-bottom: 60px;">"Ótimo serviço no meu Civic 2018. Atendimento rápido, eficiente e profissional. O carro está rodando perfeitamente. "
+                             </p>
                         </blockquote>
-                        <h3>Ingredia Nutrisha</h3>
-                        <h4>Twitter</h4>
+                        <h3>Maria Oliveira</h3>
                     </figcaption>
                 </figure>
                 <figure class="snip1533 second">
@@ -302,21 +303,23 @@
                     </div>
                     <figcaption>
                         <blockquote>
-                            <p>The only skills I have the patience to learn are those that have no real application in
-                                life. </p>
+                            <p style="margin-bottom: 60px;">"O serviço na oficina foi impecável. Meu Renegade 2020 voltou como novo. Atendimento de primeira."</p>
                         </blockquote>
-                        <h3>Ingredia Nutrisha</h3>
-                        <h4>Twitter</h4>
+                        <h3>Carlos Mendes</h3>
                     </figcaption>
                 </figure>
             </div>
         </section>
 
-        <section class="localizacao-container">
+        <section class="localizacao-container" id="localizacao">
             <div class="localizacao">
-                <h1>Localização</h1>
+                <div class="textos-localizacao">
+                    <h1>Localização</h1>
+                    <p>Encontre-nos no mapa abaixo. Use o mapa interativo para obter direções detalhadas e 
+                        planejar sua visita. Para mais informações, entre em contato conosco.</p>
+                </div>
                 <div style="width: 100%">
-                    <iframe width="80%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                         src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=R.%20Ant%C3%B4nio%20de%20Oliveira,%2041%20-%20Vila%20Augusta,%20Sorocaba%20-%20SP,%2018040-120+(My%20Business%20Name)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                         <a href="https://www.gps.ie/">gps handsets</a>
                     </iframe>
@@ -324,7 +327,7 @@
             </div>
         </section>
 
-        <section class="contato-container">
+        <section class="contato-container" id="contato">
             <div class="contato">
                 <div class="contato-info">
                     <h1 style="font-size: 2rem;">Contate-nos</h1>
@@ -333,14 +336,15 @@
                             alguma dúvida, sugestão ou precisa de assistência, não hesite em nos contatar.</p>
                         <p>
                             <hr>
-                            <span>Whatsapp:</span> <a href="https://wa.me/5511999999999">(11) 99999-9999</a>
+                            <span>Whatsapp:</span> <a href="https://wa.me/5515981414711" target="_blank">(15) 98141-4711</a>
                             <br>
                             <span>E-mail:</span> <a
-                                href="mailto:3oK0d@example.com?subject=agendamento">3oK0d@example.com</a>
+                                href="mailto:3oK0d@example.com?subject=agendamento" target="_blank">3oK0d@example.com</a>
                             <br>
-                            <span>Endereço:</span> <a
-                                href="https://www.google.com/maps/place/R.+Ant%C3%B4nio+de+Oliveira,+41+-+Vila+Augusta,+Sorocaba+-+SP,+18040-120/@-23.714697,-47.404236,17z/data=!3m1!4b1!4m5!3m4!1s0x94c9c7b2b2c7b2b2:0x4f5f2e3b2b2b2b2b!8m2!3d-23.714697!4d-47.404236">Rua
-                                Antônio de Oliveira, 41 - Vila Augusta, Sorocaba - SP</a>
+                            <span>Endereço:</span> 
+                            <a href="https://www.google.com/maps/place/R.+Ant%C3%B4nio+de+Oliveira,+41+-+Vila+Augusta,+Sorocaba+-+SP,+18040-120/@-23.714697,-47.404236,17z/data=!3m1!4b1!4m5!3m4!1s0x94c9c7b2b2c7b2b2:0x4f5f2e3b2b2b2b2b!8m2!3d-23.714697!4d-47.404236" target="_blank">
+                                Rua Antônio de Oliveira, 41 - Vila Augusta, Sorocaba - SP
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -360,31 +364,42 @@
             <div class="atendimento">
                 <h2>Atendimento</h2>
                 <p>Segunda a Sexta das 8h às 18h</p>
-                <p><a href="tel: +5511999999999">Telefone: (11) 9999-9999</a></p>
-                <p><a
-                        href="https://google.com/maps/place/R.+Ant%C3%B4nio+de+Oliveira,+41+-+Vila+Augusta,+Sorocaba+-+SP,+18040-120/@-23.714697,-47.404236,17z/data=!3m1!4b1!4m5!3m4!1s0x94c9c7b2b2c7b2b2:0x4f5f2e3b2b2b2b2b!8m2!3d-23.714697!4d-47.404236">Endereço:
-                        Rua Antônio de Oliveira, 41 - Vila Augusta, Sorocaba - SP. CEP: 18040-120</a></p>
+                <p><a href="tel: +5515981414711">Telefone: (15) 98141-4711</a></p>
+                <p>
+                    <a
+                        href="https://google.com/maps/place/R.+Ant%C3%B4nio+de+Oliveira,+41+-+Vila+Augusta,+Sorocaba+-+SP,+18040-120/@-23.714697,-47.404236,17z/data=!3m1!4b1!4m5!3m4!1s0x94c9c7b2b2c7b2b2:0x4f5f2e3b2b2b2b2b!8m2!3d-23.714697!4d-47.404236" target="_blank">
+                        Endereço:
+                        Rua Antônio de Oliveira, 41 - Vila Augusta, Sorocaba - SP. CEP: 18040-120
+                    </a>
+                </p>
             </div>
             <div class="follow">
                 <h2>Siga-nos: </h2>
                 <div class="redes">
-                    <a href="https://www.instagram.com/inoveautocenter_/" target="_blank" class="instagram"><i
-                            class='bx bxl-instagram'></i>
-                        <a href="" class="facebook" target="_blank"><i class='bx bxl-facebook'></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=551199999999" target="_blank" class="whatsapp"><i
-                                class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.instagram.com/inoveautocenter_/" target="_blank" class="instagram">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="" class="facebook" target="_blank">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5515981414711" target="_blank" class="whatsapp">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
                 </div>
             </div>
         </div>
         <hr>
-        <p>&copy; Copyright 2025 INOVE Auto Center | Desenvolvido por: <span style="color: rgb(152, 152, 152);"> Felipe
-                Augusto e Arthur Agapito </span></p>
+        <p>&copy; Copyright 2025 INOVE Auto Center | Desenvolvido por: 
+            <span style="color: rgb(152, 152, 152);"> 
+                Felipe Augusto e Arthur Agapito 
+            </span>
+        </p>
     </footer>
 </body>
 <script src="js/navbar.js"></script>
 <script src="js/modal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="js/teste.js"></script>
+<script src="js/card.js"></script>
 
 <!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
 
