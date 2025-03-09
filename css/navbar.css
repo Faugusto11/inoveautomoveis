@@ -120,7 +120,7 @@ li .active::before, .nav-list-collpase li .active::before{
     text-align: left;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
     .bx-menu{
         display: flex;
         justify-content: center;
